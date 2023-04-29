@@ -48,3 +48,12 @@ Examples:
 Simulations, Testing, DigitalTwins
 
 
+## Cloud
+
++ [Oracle ERP vs. SAP](https://www.oracle.com/erp/oracle-vs-sap/)
++ [10 Differences between Oracle and SAP](https://www.oracle.com/erp/oracle-vs-sap/differentiators/)
+
+
+
+
+
