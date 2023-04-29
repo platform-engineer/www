@@ -54,6 +54,9 @@ Simulations, Testing, DigitalTwins
 + [10 Differences between Oracle and SAP](https://www.oracle.com/erp/oracle-vs-sap/differentiators/)
 
 
+## Infra
 
++ [Join The Open Infrastructure Foundation - Open Infrastructure Foundation (OpenInfra Foundation)](https://openinfra.dev/join/individual)
 
+> OpenInfra Foundation Individual MemberJoin over 110,000 community members from 187 countries to advance the future of open source. Everyone is welcome—the Open Infrastructure community is inclusive and diverse, and all members agree to the Open Infrastructure [Community Code of Conduct](https://openinfra.dev/legal/code-of-conduct). There are two types of accounts: Individual Member accounts, which include certain rights and responsibilities, and Community accounts, which are more limited.
 
