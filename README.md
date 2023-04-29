@@ -53,6 +53,12 @@ Simulations, Testing, DigitalTwins
 + [Oracle ERP vs. SAP](https://www.oracle.com/erp/oracle-vs-sap/)
 + [10 Differences between Oracle and SAP](https://www.oracle.com/erp/oracle-vs-sap/differentiators/)
 
+### [Kata Containers - Open Source Container Runtime Software | Kata Containers](https://katacontainers.io/)
+
+> ## About Kata Containers
+> 
+> Kata Containers is an open source community working to build a secure container runtime with lightweight virtual machines that feel and perform like containers, but provide stronger workload isolation using hardware virtualization technology as a second layer of defense.
+
 
 ## Infra
 
