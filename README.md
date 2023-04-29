@@ -48,6 +48,12 @@ Examples:
 Simulations, Testing, DigitalTwins
 
 
+## Languages
+
++ [Java Tutorial](https://jenkov.com/tutorials/java/index.html)
+
+
+
 ## Cloud
 
 + [Oracle ERP vs. SAP](https://www.oracle.com/erp/oracle-vs-sap/)
@@ -59,6 +65,8 @@ Simulations, Testing, DigitalTwins
 > 
 > Kata Containers is an open source community working to build a secure container runtime with lightweight virtual machines that feel and perform like containers, but provide stronger workload isolation using hardware virtualization technology as a second layer of defense.
 
++ [Kata Containers](https://github.com/kata-containers)
+Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
 
 ## Infra
 
