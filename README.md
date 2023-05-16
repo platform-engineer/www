@@ -274,6 +274,24 @@ Mainframes were the large cabinets housing the central processing unit (CPU) and
 
 
 
+### Illumos
+
++ [illumos - Wikipedia](https://en.wikipedia.org/wiki/Illumos)
+
+Illumos (stylized as illumos) is a partly[3] free and open-source Unix operating system. It is based on OpenSolaris, which was based on System V Release 4 (SVR4) and the Berkeley Software Distribution (BSD). Illumos comprises a kernel, device drivers, system libraries, and utility software for system administration. This core is now the base for many different open-sourced illumos distributions,[4] in a similar way in which the Linux kernel is used in different Linux distributions.[5]
+
+The maintainers write illumos in lowercase[6] since some computer fonts do not clearly distinguish a lowercase L from an uppercase i: Il (see homoglyph).[7] The project name is a combination of words illuminare from Latin for to light and OS for Operating System.[8] 
+
+#### Features
+
++ **ZFS**, a combined file system and logical volume manager providing a high level of data integrity for very large storage capacities.
++ **Solaris Containers** (or Zones), a low overhead implementation of operating-system-level virtualization technology for x86 and SPARC systems.
++ **DTrace, a comprehensive dynamic tracing framework for troubleshooting kernel and application problems on production systems in real time.
++ **Kernel-based Virtual Machine (KVM)**, a virtualization infrastructure. KVM supports native virtualization on processors with hardware virtualization extensions.
++ **OpenSolaris Network Virtualization and Resource Control (or Crossbow)**, a set of features that provides an internal network virtualization and quality of service including: virtual NIC (VNIC) pseudo-network interface technology, exclusive ip zones, bandwidth management, and flow control on a per interface and per VNIC basis.
+
+
+
 
 ---
 
