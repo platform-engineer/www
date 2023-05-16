@@ -84,18 +84,81 @@ During a conversation with Olek Suchdolski, we got some view of interesting open
 I prepared the list of interesting links with a descriptions
 
 
-#### 
+#### Multipass
+
+Multipass is the recommended method to create Ubuntu VMs on workstations. It is designed for developers who want to quickly set up a fresh Ubuntu environment with just a single command. Multipass installs on Linux, Windows and macOS, and supports leading hypervisors, including KVM.
+
+
+#### Kernel-based Virtual Machine [KVM hypervisor: a beginners’ guide - Ubuntu](https://ubuntu.com/blog/kvm-hyphervisor)
+
+KVM (Kernel-based Virtual Machine) is the leading open source virtualisation technology for Linux. It installs natively on all Linux distributions and turns underlying physical servers into hypervisors so that they can host multiple, isolated virtual machines (VMs). KVM comes with no licenses, type-1 hypervisor capabilities and a variety of performance extensions which makes it an ideal candidate for virtualisation and cloud infrastructure implementation. But what are the benefits of KVM hypervisor and how do you get started?
+
+
+
+#### [Virtual Machine Manager](https://virt-manager.org/)
+
+Virtual Machine Manager is a desktop user interface for managing KVM VMs. It presents a summary view of running guest instances, their live performance and resource utilisation statistics. Virtual Machine Manager comes with wizards that enable the creation of new VMs and the configuration of their resource allocation and virtual hardware.
+The virt-manager application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers). It presents a summary view of running domains, their live performance & resource utilization statistics. Wizards enable the creation of new domains, and configuration & adjustment of a domain’s resource allocation & virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.
+
+**install**
+```
+yum install virt-manager (Fedora)
+apt-get install virt-manager (Debian)
+emerge virt-manager (Gentoo)
+pkg_add virt-manager (OpenBSD)
+```
+
++ virt-install is a command line tool which provides an easy way to provision operating systems into virtual machines.
++ virt-viewer is a lightweight UI interface for interacting with the graphical display of virtualized guest OS. It can display VNC or SPICE, and uses libvirt to lookup the graphical connection details.
++ virt-clone is a command line tool for cloning existing inactive guests. It copies the disk images, and defines a config with new name, UUID and MAC address pointing to the copied disks.
++ virt-xml is a command line tool for easily editing libvirt domain XML using virt-install’s command line options.
++ virt-bootstrap is a command line tool providing an easy way to setup the root file system for libvirt-based containers.
+
+
+**KVM hypervisor benefits**
+
+The main benefit of the KVM hypervisor is its native availability on Linux. Since KVM is part of Linux, it installs natively, enabling straightforward user experience and smooth integration. But KVM brings more benefits compared to other virtualisation technologies. Those include:
+ 
+-   **Performance** – One of the main drawbacks of traditional virtualisation technologies is performance degradation compared to physical machines. Since KVM is the type-1 hypervisor, it outperforms all type-2 hypervisors, ensuring near-metal performance. With KVM hypervisor VMs boot fast and achieve desired performance results.
+-   **Scalability** – As a Linux kernel module, the KVM hypervisor automatically scales to respond to heavy loads once the number of VMs increases. The KVM hypervisor also enables clustering for thousands of nodes, laying the foundations for cloud infrastructure implementation.
+-   **Security** – Since KVM is part of the Linux kernel source code, it benefits from the world’s biggest open source community collaboration, rigorous development and testing process as well as continuous security patching.
+-   **Maturity** – KVM was first created in 2006 and has continued to be actively developed since then. It is a 15-year old project, presenting a high level of maturity. More than 1,000 developers around the world have contributed to KVM code.
+-   **Cost-efficiency** – Last but not least, the cost is a driving factor for many organisations. Since KVM is open source and available as a Linux kernel module, it comes at zero cost out of the box. Businesses can optionally subscribe to various commercial programmes, such as [UA-I (Ubuntu Advantage for Infrastructure)](https://ubuntu.com/advantage) to receive enterprise support for their KVM-based virtualisation or cloud infrastructure.
 
 
 
 
-#### 
+#### OpenStack
+
+OpenStack is an open-source cloud platform that manages distributed compute, network and storage resources, aggregates them into pools, and allows on-demand provisioning of virtual resources through a self-service portal. 
+OpenStack is the most popular open source cloud computing platform that enables the management of distributed compute, network and storage resources in the data centre. It wraps around the KVM hypervisor providing virtualisation capabilities and enables fully automated provisioning of VMs through a self-service portal.
+OpenStack is a cost-effective extension of the existing public cloud infrastructure and a reasonable alternative to proprietary virtualisation solutions. It enables organisations to optimise their cloud costs and service providers to build an infrastructure competitive to hyperscalers.
+
++ [What is OpenStack - Ubuntu](https://ubuntu.com/openstack/what-is-openstack)
+
+
+#### LXC
+
++ [lxc/lxc: LXC - Linux Containers](https://github.com/lxc/lxc)
+
+LXC is the well-known and heavily tested low-level Linux container runtime. It is in active development since 2008 and has proven itself in critical production environments world-wide. Some of its core contributors are the same people that helped to implement various well-known containerization features inside the Linux kernel.
+
+Unprivileged containers are containers that are run without any privilege. This requires support for user namespaces in the kernel that the container is run on. LXC was the first runtime to support unprivileged containers after user namespaces were merged into the mainline kernel.
+
+In essence, user namespaces isolate given sets of UIDs and GIDs. This is achieved by establishing a mapping between a range of UIDs and GIDs on the host to a different (unprivileged) range of UIDs and GIDs in the container. The kernel will translate this mapping in such a way that inside the container all UIDs and GIDs appear as you would expect from the host whereas on the host these UIDs and GIDs are in fact unprivileged. For example, a process running as UID and GID 0 inside the container might appear as UID and GID 100000 on the host. The implementation and working details can be gathered from the corresponding user namespace man page.
 
 
 
+#### LXD
 
 
-#### 
+LXD system containers run a complete filesystem with background processes. This allows you to run any workload, or containerise your traditional systems and apps without modifying the apps or your operations. LXD containers offer the density and efficiency of containers with a VM-like experience.
+
+Fast, dense, and secure container and VM management at any scale
+
+LXD provides a unified user experience for managing system containers and virtual machines. For more demanding workloads, LXD can be set up in a cluster environment to run containers, VMs, or a combination of the two on a set of machines. 
+LXD has direct hardware access, minimising overhead and matching the density and efficiency of containers.
+
 
 
 
@@ -105,6 +168,7 @@ I prepared the list of interesting links with a descriptions
 
 The Xen Project is focused on advancing virtualization in a number of different commercial and open source applications, including server virtualization, Infrastructure as a Services (IaaS), desktop virtualization, security applications, embedded and hardware appliances, and automotive/aviation.
 + [Downloads - Xen Project](https://xenproject.org/downloads/)
+
 
 
 #### Xen Project Benefits
@@ -156,6 +220,8 @@ Most "Barcelona" class and newer AMD processors support bhyve but some, notably 
 
 #### Code Analysis
 
+[Ghidra Debugger with QEMU Emulated ARM Binary - YouTube](https://www.youtube.com/watch?v=muj9Nfk-YPY)
+
 Ghidra is a software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate. This framework includes a suite of full-featured, high-end software analysis tools that enable users to analyze compiled code on a variety of platforms including Windows, macOS, and Linux. Capabilities include disassembly, assembly, decompilation, graphing, and scripting, along with hundreds of other features. Ghidra supports a wide variety of processor instruction sets and executable formats and can be run in both user-interactive and automated modes. Users may also develop their own Ghidra extension components and/or scripts using Java or Python.
 + [Ghidra](https://ghidra-sre.org/)
 + 
@@ -164,6 +230,50 @@ Ghidra is a software reverse engineering (SRE) framework created and maintained 
 + [Issues · NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra/issues)
 
 + [Code Analysis With Ghidra: An Introduction](https://blogs.blackberry.com/en/2019/07/an-introduction-to-code-analysis-with-ghidra)
+
+
+#### Multics
+
++ [Multics wikipedia](https://en.wikipedia.org/wiki/Multics)
++ [Multics History](https://www.multicians.org/history.html)
+
+Multics (Multiplexed Information and Computing Service) is a time-sharing operating system begun in 1965 and used until 2000. The system was started as a joint project by MIT's Project MAC, Bell Telephone Laboratories, and General Electric Company's Large Computer Products Division. Professor Fernando J. Corbató of MIT led the project. Bell Labs withdrew from the development effort in 1969, and in 1970 GE sold its computer business to Honeywell, which offered Multics as a commercial product and sold dozens of systems, until its cancellation in 1985.
+
+Multics included
+
+    a supervisor program that managed all hardware resources, using symmetric multiprocessing, multiprogramming, and paging
+    an innovative segmented memory addressing system supported by hardware
+    a tree structured file system
+    device support for peripherals and terminals
+    hundreds of command programs, including language compilers and tools
+    hundreds of user-callable library routines
+    operational and support tools
+    user and system documentation
+
+
+![image](https://github.com/platform-engineer/www/assets/5669657/a6388062-9e09-4bf1-a591-544dffada733)
+
+
+
+#### PRIMOS
+
++ [PRIMOS - Wikipedia](https://en.wikipedia.org/wiki/PRIMOS)
+
+PRIMOS is a discontinued operating system developed during the 1970s by Prime Computer for its minicomputer systems. It rapidly gained popularity and by the mid-1980s was a serious contender as a mainline minicomputer operating system.
+With the advent of PCs and the decline of the minicomputer industry, Prime was forced out of the market in the early 1990s, and by the end of 2010 the trademarks for both PRIME[1] and PRIMOS[2] no longer existed.[3]
+Prime had also offered a customizable real-time OS called RTOS.
+
+
+
+
+### What is a Mainframe?
+
++ [What is a Mainframe?](https://www.microfocus.com/en-us/what-is/mainframe)
+
+Mainframes were the large cabinets housing the central processing unit (CPU) and main memory of early computers. The term persists to describe and differentiate these larger computers, known for their considerable size and amount of storage, processing power, and reliability, from smaller counterparts such as servers, minicomputers, workstations, and personal computers (PCs). While mainframe is a generic term, most people instantly associate these computing workhorses with IBM and their System Z, the most popular and widely used models. The Z15 is the latest model.
+
+
+
 
 ---
 
