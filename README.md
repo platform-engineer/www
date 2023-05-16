@@ -142,7 +142,14 @@ The main benefit of the KVM hypervisor is its native availability on Linux. Sinc
 
 
 
-#### OpenStack
+#### [OpenStack](https://www.redhat.com/en/topics/openstack)
+
+OpenStack is an open source platform that uses pooled virtual resources to build and manage private and public clouds. 
+The tools that comprise the OpenStack platform, called "projects," handle the core cloud-computing services of compute, networking, storage, identity, and image services. 
+More than a dozen optional projects can also be bundled together to create unique, deployable clouds.
+
+In virtualization, resources such as storage, CPU, and RAM are abstracted from a variety of vendor-specific programs and split by a hypervisor before being distributed as needed. 
+OpenStack uses a consistent set of application programming interfaces (APIs) to abstract those virtual resources 1 step further into discrete pools used to power standard cloud computing tools that administrators and users interact with directly.
 
 OpenStack is an open-source cloud platform that manages distributed compute, network and storage resources, aggregates them into pools, and allows on-demand provisioning of virtual resources through a self-service portal. 
 OpenStack is the most popular open source cloud computing platform that enables the management of distributed compute, network and storage resources in the data centre. It wraps around the KVM hypervisor providing virtualisation capabilities and enables fully automated provisioning of VMs through a self-service portal.
