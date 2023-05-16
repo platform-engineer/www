@@ -1,6 +1,5 @@
 # www.platformengineer.net 
 
-<iframe width="450" height="450" src="https://meeting.zoho.eu/meeting/login/embedmeeting.jsp?meetingKey=1242554154&newWindow=true&t=3c55bd981e4b5714deea68031769e8a199fb6ccbd01af66a9f8f959031b7ccf5" frameborder="0"> </iframe>
 
 
 + [platform engineer](https://www.platformengineer.net/)
