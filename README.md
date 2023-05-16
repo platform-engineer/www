@@ -71,6 +71,7 @@ Simulations, Testing, DigitalTwins
 + [Kata Containers](https://github.com/kata-containers)
 Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
 
+
 ## Infra
 
 + [Join The Open Infrastructure Foundation - Open Infrastructure Foundation (OpenInfra Foundation)](https://openinfra.dev/join/individual)
@@ -92,6 +93,19 @@ Multipass is the recommended method to create Ubuntu VMs on workstations. It is 
 #### Kernel-based Virtual Machine [KVM hypervisor: a beginners’ guide - Ubuntu](https://ubuntu.com/blog/kvm-hyphervisor)
 
 KVM (Kernel-based Virtual Machine) is the leading open source virtualisation technology for Linux. It installs natively on all Linux distributions and turns underlying physical servers into hypervisors so that they can host multiple, isolated virtual machines (VMs). KVM comes with no licenses, type-1 hypervisor capabilities and a variety of performance extensions which makes it an ideal candidate for virtualisation and cloud infrastructure implementation. But what are the benefits of KVM hypervisor and how do you get started?
+
+How does KVM work?
++ [What is KVM?](https://www.redhat.com/en/topics/virtualization/what-is-KVM)
+
+KVM converts Linux into a type-1 (bare-metal) hypervisor. All hypervisors need some operating system-level components—such as a memory manager, process scheduler, input/output (I/O) stack, device drivers, security manager, a network stack, and more—to run VMs. KVM has all these components because it’s part of the Linux kernel. Every VM is implemented as a regular Linux process, scheduled by the standard Linux scheduler, with dedicated virtual hardware like a network card, graphics adapter, CPU(s), memory, and disks.
+
+It’s possible to manually manage a handful of VM fired up on a single workstation without a management tool. Large enterprises use virtualization management software that interfaces with virtual environments and the underlying physical hardware to simplify resource administration, enhance data analyses, and streamline operations. Red Hat created Red Hat Virtualization for exactly this purpose.
+
+KVM uses a combination of security-enhanced Linux (SELinux) and secure virtualization (sVirt) for enhanced VM security and isolation. SELinux establishes security boundaries around VMs. sVirt extends SELinux’s capabilities, allowing Mandatory Access Control (MAC) security to be applied to guest VMs and preventing manual labeling errors.
+
+SELinux was originally a development project from the National Security Agency (NSA )[18] and others. It is an implementation of the Flask operating system security architecture.[19]The NSA integrated SELinux into the Linux kernel using the Linux Security Modules (LSM ) framework. SELinux motivated the creation of LSM, at the suggestion of Linus Torvalds, who wanted a modular approach to security instead of just accepting SELinux into the kernel. 
+
+
 
 
 
@@ -209,7 +223,7 @@ This site contains information relating to the use and development of virtual se
 Note: If this isn't what you are looking for, maybe Linux Virtual Server is. 
 
 
-#### [bhyve - FreeBSD Wiki](https://wiki.freebsd.org/bhyve)
+#### [Bhyve - FreeBSD Wiki](https://wiki.freebsd.org/bhyve)
 
 bhyve, pronounced "beehive" is a hypervisor/virtual machine manager for FreeBSD that supports most Intel and AMD processors that report the "POPCNT" (POPulation Count) processor feature in dmesg(8).
 
@@ -282,6 +296,7 @@ Illumos (stylized as illumos) is a partly[3] free and open-source Unix operating
 
 The maintainers write illumos in lowercase[6] since some computer fonts do not clearly distinguish a lowercase L from an uppercase i: Il (see homoglyph).[7] The project name is a combination of words illuminare from Latin for to light and OS for Operating System.[8] 
 
+
 #### Features
 
 + **ZFS**, a combined file system and logical volume manager providing a high level of data integrity for very large storage capacities.
@@ -289,7 +304,6 @@ The maintainers write illumos in lowercase[6] since some computer fonts do not c
 + **DTrace, a comprehensive dynamic tracing framework for troubleshooting kernel and application problems on production systems in real time.
 + **Kernel-based Virtual Machine (KVM)**, a virtualization infrastructure. KVM supports native virtualization on processors with hardware virtualization extensions.
 + **OpenSolaris Network Virtualization and Resource Control (or Crossbow)**, a set of features that provides an internal network virtualization and quality of service including: virtual NIC (VNIC) pseudo-network interface technology, exclusive ip zones, bandwidth management, and flow control on a per interface and per VNIC basis.
-
 
 
 
