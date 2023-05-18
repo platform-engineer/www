@@ -353,6 +353,21 @@ https://upload.wikimedia.org/wikipedia/commons/6/6e/Data_Networks_classification
 
 
 
+## Build a MAAS and LXD environment
+
++ [MAAS - Build a MAAS and LXD environment in 30 minutes with Multipass on Ubuntu](https://maas.io/tutorials/build-a-maas-and-lxd-environment-in-30-minutes-with-multipass-on-ubuntu#3-install-multipass)
+
+
+
+
+## Create Docker Swarm cluster
+
++ [How To Install Docker Swarm On Ubuntu 22.04 - ComputingForGeeks](https://computingforgeeks.com/how-to-install-docker-swarm-on-ubuntu/)
+
+Docker swarm is a tool used to create a cluster of docker hosts. With docker swarm, we can create a high availability and high performance cluster where applications are distributed among the hosts. Docker swarm consists of a manager and worker nodes and operations are performed from the manager. In this guide, we are looking at how to set up Docker swarm cluster on Ubuntu 22.04|20.04.
+ 
+
+
 ---
 
 + [edit](https://github.com/platform-engineer/www/edit/main/README.md)
