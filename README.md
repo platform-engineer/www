@@ -304,6 +304,45 @@ Illumos (stylized as illumos) is a partly[3] free and open-source Unix operating
 The maintainers write illumos in lowercase[6] since some computer fonts do not clearly distinguish a lowercase L from an uppercase i: Il (see homoglyph).[7] The project name is a combination of words illuminare from Latin for to light and OS for Operating System.[8] 
 
 
+## OpenSolaris
+
++ [OpenSolaris - Wikipedia](https://en.wikipedia.org/wiki/OpenSolaris)
+
+is a discontinued open-source computer operating system based on Solaris and created by Sun Microsystems. 
+It was also, perhaps confusingly, the name of a project initiated by Sun to build a developer and user community around the eponymous operating system software. 
+OpenSolaris is a descendant of the UNIX System V Release 4 (SVR4) code base developed by Sun and AT&T in the late 1980s and is the only version of the System V variant of UNIX available as open source.
+OpenSolaris was developed as a combination of several software consolidations that were open sourced starting with Solaris 10. It includes a variety of free software, including popular desktop and server software.
+
+After Oracle’s acquisition of Sun Microsystems in 2010, Oracle discontinued development of OpenSolaris in house, pivoting to focus exclusively on the development of the proprietary Solaris Express (now Oracle Solaris).
+
+
+
+## OpenIndiana
+
+
++ [OpenIndiana Docs](https://docs.openindiana.org/)
++ [OpenIndiana - Wikipedia](https://en.wikipedia.org/wiki/OpenIndiana)
+
+OpenIndiana is a free and open-source illumos distribution descended from UNIX System V Release 4 via the OpenSolaris operating system. 
+Forked from OpenSolaris after OpenSolaris was discontinued by Oracle Corporation, OpenIndiana takes its name from Project Indiana, the internal codename for OpenSolaris at Sun Microsystems before Oracle’s acquisition of Sun in 2010.
+Created by a development team led by Alasdair Lumsden, the OpenIndiana project is now stewarded by the illumos Foundation, which develops and maintains the illumos operating system.
+The project aims to make OpenIndiana "the de facto OpenSolaris distribution installed on production servers where security and bug fixes are provided free of charge."
+
+
+
+## LAN
+
++ [Local area network - Wikipedia](https://en.wikipedia.org/wiki/Local_area_network)
+
+A local area network (LAN) is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building.[1] By contrast, a wide area network (WAN) not only covers a larger geographic distance, but also generally involves leased telecommunication circuits.
+
+Ethernet and Wi-Fi are the two most common technologies in use for local area networks. Historical network technologies include ARCNET, Token Ring and AppleTalk. 
+
+![image](https://github.com/platform-engineer/www/assets/5669657/2f3ab4f1-e42c-4e0f-8639-7bdcd8416c1e)
+
+https://upload.wikimedia.org/wikipedia/commons/6/6e/Data_Networks_classification_by_spatial_scope.svg
+
+
 #### Features
 
 + **ZFS**, a combined file system and logical volume manager providing a high level of data integrity for very large storage capacities.
